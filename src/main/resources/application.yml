@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: "Currency Converter Example"
+  doc:
+    swagger-ui:
+      path: "/converter-documentation"
+    api-docs:
+      path: "/converter-api-docs"
+      swagger-ui:
+        tryItOutEnabled: true
+        filter: true
+  main:
+    allow-bean-definition-overriding: true
+
+
+currency-converter:
+  openapi:
+    dev-url: "http://localhost:8080"
+
+external-currency-layer-api:
+  access-key: 2ea82a1819acbec7b5e15a174479d4ce
